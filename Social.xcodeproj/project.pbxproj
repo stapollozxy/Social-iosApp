@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		516AB029200AD308005802EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB028200AD308005802EB /* AppDelegate.m */; };
-		516AB02C200AD308005802EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB02B200AD308005802EB /* ViewController.m */; };
-		516AB02F200AD308005802EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516AB02D200AD308005802EB /* Main.storyboard */; };
 		516AB031200AD308005802EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516AB030200AD308005802EB /* Assets.xcassets */; };
 		516AB034200AD308005802EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516AB032200AD308005802EB /* LaunchScreen.storyboard */; };
 		516AB037200AD308005802EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB036200AD308005802EB /* main.m */; };
 		516AB041200AD308005802EB /* SocialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB040200AD308005802EB /* SocialTests.m */; };
 		516AB04C200AD308005802EB /* SocialUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB04B200AD308005802EB /* SocialUITests.m */; };
+		516AB05C200AD458005802EB /* SCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB05B200AD458005802EB /* SCTabBarController.m */; };
+		516AB05E200ADE0A005802EB /* Explore_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 516AB05D200ADE0A005802EB /* Explore_selected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,6 @@
 		516AB024200AD308005802EB /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516AB027200AD308005802EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		516AB028200AD308005802EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		516AB02A200AD308005802EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		516AB02B200AD308005802EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		516AB02E200AD308005802EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		516AB030200AD308005802EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		516AB033200AD308005802EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		516AB035200AD308005802EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +48,9 @@
 		516AB047200AD308005802EB /* SocialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		516AB04B200AD308005802EB /* SocialUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialUITests.m; sourceTree = "<group>"; };
 		516AB04D200AD308005802EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		516AB05A200AD458005802EB /* SCTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTabBarController.h; sourceTree = "<group>"; };
+		516AB05B200AD458005802EB /* SCTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTabBarController.m; sourceTree = "<group>"; };
+		516AB05D200ADE0A005802EB /* Explore_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Explore_selected.png; path = ../../../../Downloads/Explore_selected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +101,11 @@
 		516AB026200AD308005802EB /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				516AB059200AD3C2005802EB /* ViewController */,
 				516AB027200AD308005802EB /* AppDelegate.h */,
 				516AB028200AD308005802EB /* AppDelegate.m */,
-				516AB02A200AD308005802EB /* ViewController.h */,
-				516AB02B200AD308005802EB /* ViewController.m */,
-				516AB02D200AD308005802EB /* Main.storyboard */,
 				516AB030200AD308005802EB /* Assets.xcassets */,
+				516AB05D200ADE0A005802EB /* Explore_selected.png */,
 				516AB032200AD308005802EB /* LaunchScreen.storyboard */,
 				516AB035200AD308005802EB /* Info.plist */,
 				516AB036200AD308005802EB /* main.m */,
@@ -130,6 +129,15 @@
 				516AB04D200AD308005802EB /* Info.plist */,
 			);
 			path = SocialUITests;
+			sourceTree = "<group>";
+		};
+		516AB059200AD3C2005802EB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				516AB05A200AD458005802EB /* SCTabBarController.h */,
+				516AB05B200AD458005802EB /* SCTabBarController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516AB05E200ADE0A005802EB /* Explore_selected.png in Resources */,
 				516AB034200AD308005802EB /* LaunchScreen.storyboard in Resources */,
 				516AB031200AD308005802EB /* Assets.xcassets in Resources */,
-				516AB02F200AD308005802EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				516AB02C200AD308005802EB /* ViewController.m in Sources */,
 				516AB037200AD308005802EB /* main.m in Sources */,
+				516AB05C200AD458005802EB /* SCTabBarController.m in Sources */,
 				516AB029200AD308005802EB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,14 +311,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		516AB02D200AD308005802EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				516AB02E200AD308005802EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		516AB032200AD308005802EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
