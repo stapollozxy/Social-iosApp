@@ -15,6 +15,12 @@
 		516AB04C200AD308005802EB /* SocialUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB04B200AD308005802EB /* SocialUITests.m */; };
 		516AB05C200AD458005802EB /* SCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB05B200AD458005802EB /* SCTabBarController.m */; };
 		516AB05E200ADE0A005802EB /* Explore_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 516AB05D200ADE0A005802EB /* Explore_selected.png */; };
+		516AB065200C2119005802EB /* SCHomneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB063200C2119005802EB /* SCHomneViewController.m */; };
+		516AB066200C2119005802EB /* SCHomneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516AB064200C2119005802EB /* SCHomneViewController.xib */; };
+		516AB06C200C258D005802EB /* SCHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB06A200C258D005802EB /* SCHomeTableViewCell.m */; };
+		516AB06D200C258D005802EB /* SCHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516AB06B200C258D005802EB /* SCHomeTableViewCell.xib */; };
+		516AB070200C2B7F005802EB /* SCPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB06F200C2B7F005802EB /* SCPost.m */; };
+		516AB074200C301C005802EB /* SCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 516AB073200C301C005802EB /* SCUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,16 @@
 		516AB05A200AD458005802EB /* SCTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTabBarController.h; sourceTree = "<group>"; };
 		516AB05B200AD458005802EB /* SCTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTabBarController.m; sourceTree = "<group>"; };
 		516AB05D200ADE0A005802EB /* Explore_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Explore_selected.png; path = ../../../../Downloads/Explore_selected.png; sourceTree = "<group>"; };
+		516AB062200C2119005802EB /* SCHomneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomneViewController.h; sourceTree = "<group>"; };
+		516AB063200C2119005802EB /* SCHomneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomneViewController.m; sourceTree = "<group>"; };
+		516AB064200C2119005802EB /* SCHomneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCHomneViewController.xib; sourceTree = "<group>"; };
+		516AB069200C258D005802EB /* SCHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomeTableViewCell.h; sourceTree = "<group>"; };
+		516AB06A200C258D005802EB /* SCHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomeTableViewCell.m; sourceTree = "<group>"; };
+		516AB06B200C258D005802EB /* SCHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCHomeTableViewCell.xib; sourceTree = "<group>"; };
+		516AB06E200C2B7F005802EB /* SCPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPost.h; sourceTree = "<group>"; };
+		516AB06F200C2B7F005802EB /* SCPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPost.m; sourceTree = "<group>"; };
+		516AB072200C301C005802EB /* SCUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUser.h; sourceTree = "<group>"; };
+		516AB073200C301C005802EB /* SCUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,9 @@
 		516AB026200AD308005802EB /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				516AB071200C3001005802EB /* User */,
+				516AB068200C2558005802EB /* View */,
+				516AB067200C24E0005802EB /* Model */,
 				516AB059200AD3C2005802EB /* ViewController */,
 				516AB027200AD308005802EB /* AppDelegate.h */,
 				516AB028200AD308005802EB /* AppDelegate.m */,
@@ -136,8 +155,39 @@
 			children = (
 				516AB05A200AD458005802EB /* SCTabBarController.h */,
 				516AB05B200AD458005802EB /* SCTabBarController.m */,
+				516AB062200C2119005802EB /* SCHomneViewController.h */,
+				516AB063200C2119005802EB /* SCHomneViewController.m */,
+				516AB064200C2119005802EB /* SCHomneViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		516AB067200C24E0005802EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				516AB06E200C2B7F005802EB /* SCPost.h */,
+				516AB06F200C2B7F005802EB /* SCPost.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		516AB068200C2558005802EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				516AB069200C258D005802EB /* SCHomeTableViewCell.h */,
+				516AB06A200C258D005802EB /* SCHomeTableViewCell.m */,
+				516AB06B200C258D005802EB /* SCHomeTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		516AB071200C3001005802EB /* User */ = {
+			isa = PBXGroup;
+			children = (
+				516AB072200C301C005802EB /* SCUser.h */,
+				516AB073200C301C005802EB /* SCUser.m */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516AB06D200C258D005802EB /* SCHomeTableViewCell.xib in Resources */,
 				516AB05E200ADE0A005802EB /* Explore_selected.png in Resources */,
 				516AB034200AD308005802EB /* LaunchScreen.storyboard in Resources */,
+				516AB066200C2119005802EB /* SCHomneViewController.xib in Resources */,
 				516AB031200AD308005802EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				516AB037200AD308005802EB /* main.m in Sources */,
+				516AB070200C2B7F005802EB /* SCPost.m in Sources */,
+				516AB06C200C258D005802EB /* SCHomeTableViewCell.m in Sources */,
 				516AB05C200AD458005802EB /* SCTabBarController.m in Sources */,
+				516AB074200C301C005802EB /* SCUser.m in Sources */,
+				516AB065200C2119005802EB /* SCHomneViewController.m in Sources */,
 				516AB029200AD308005802EB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
